@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.indigo.shade800,
+        backgroundColor: Colors.green.shade900,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const CircleAvatar(
                 radius: 50.0,
@@ -37,54 +38,53 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 25.0),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.indigo.shade800,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+55 31 99999 9999',
-                      style: TextStyle(
-                          color: Colors.indigo.shade800,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0),
-                    ),
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.indigo.shade800,
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.green.shade900,
                     ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'ash_ketchum@email.com',
+                    title: Text(
+                      '+55 31 99999 9999',
                       style: TextStyle(
-                          color: Colors.indigo.shade800,
+                          color: Colors.green.shade900,
                           fontFamily: 'Source Sans Pro',
                           fontSize: 20.0),
                     ),
-                  ],
+                  ),
                 ),
-              )
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.green.shade900,
+                    ),
+                    title: Text(
+                      'ash_ketchum@email.com',
+                      style: TextStyle(
+                          color: Colors.green.shade900,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
