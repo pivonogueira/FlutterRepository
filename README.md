@@ -3,7 +3,7 @@
 Repositório para manter e gerenciar projetos realizados com Flutter.
 
 ## Ferramentas
-AndroidStudio - IDE para desenvolvimento (a partir de 05/23)
+AndroidStudio - IDE para desenvolvimento.
 
 ## • i_am_rich
 
